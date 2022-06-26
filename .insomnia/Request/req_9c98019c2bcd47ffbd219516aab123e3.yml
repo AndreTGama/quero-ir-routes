@@ -1,0 +1,35 @@
+_id: req_9c98019c2bcd47ffbd219516aab123e3
+type: Request
+parentId: fld_ac09e005ffce412e940e9b12abf55671
+modified: 1656268010097
+created: 1656254609105
+url: "{{ _.local }}/users"
+name: user
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Andre Gama",
+    	"email": "andre_gama@email.com.br",
+    	"password": "123@Mudar"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f1a6efe6d9ce4467a8d940405574228b
+  - id: pair_40f64771058e49d482ccb2d7ad772f0b
+    name: Accept
+    value: application/json
+    description: ""
+authentication: {}
+metaSortKey: -1656254609105
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
