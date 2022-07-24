@@ -1,10 +1,10 @@
-_id: req_9c98019c2bcd47ffbd219516aab123e3
+_id: req_77b320a5e9c34d18811287ea7d87fe74
 type: Request
 parentId: fld_ac09e005ffce412e940e9b12abf55671
-modified: 1658694157628
-created: 1656254609105
-url: "{{ _.local }}/users"
-name: /users
+modified: 1658694781391
+created: 1658691902164
+url: "{{ _.local }}/users/11"
+name: /users/{id}
 description: |
   ## Objective
   This route will create a user in database
@@ -12,9 +12,14 @@ description: |
 
 
   ## Request - JSON
-  - name: string **(Full name)**
-  - email: string **(uniqui)**
-  - password: string **(uniqui)**
+  - id: integer **(route param)**
+
+  - name: string **(Full name & opcional)**
+  - email: string **(uniqui & opcional)**
+  - bio: string **(opcional)**
+  - profile_picture: string **(opcional)**
+  - type_user_id: integer **(opcional)**
+  - profile_public: boolean **(opcional)**
 
 
   ## Response
@@ -35,14 +40,17 @@ description: |
   	"errors": any
   }
   ```
-method: POST
+method: PUT
 body:
   mimeType: application/json
   text: |-
     {
     	"name": "Andre Gama",
     	"email": "andre_gama@email.com.br",
-    	"password": "123@Mudar"
+    	"bio": "Amo fazer viagens",
+    	"profile_picture": null,
+    	"type_user_id": 2,
+    	"profile_public": 1
     }
 parameters: []
 headers:
@@ -54,7 +62,7 @@ headers:
     value: application/json
     description: ""
 authentication: {}
-metaSortKey: -1656254609105
+metaSortKey: -1653799118532
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

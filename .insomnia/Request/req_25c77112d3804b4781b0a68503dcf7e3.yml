@@ -1,11 +1,57 @@
 _id: req_25c77112d3804b4781b0a68503dcf7e3
 type: Request
 parentId: fld_ac09e005ffce412e940e9b12abf55671
-modified: 1656273010269
+modified: 1658691632722
 created: 1656258702281
 url: "{{ _.local }}/users/1"
-name: user
-description: ""
+name: /users/{id}
+description: >
+  ## Objective
+
+  This route will bring the information of a single active user.
+
+
+  > Note: <span style="color:#c7254e; background-color: #fdbacd; border-radius: 4px">If you don't put any id, the route will bring all users</span>
+
+
+
+
+
+
+  ## Request
+
+  - id: integer **(opcional)**
+
+
+  ## Response
+
+
+  ```
+
+  {
+  	"error": boolean,
+  	"message": string,
+  	"developerMessage": any,
+  	"exception": any,
+  	"data": {
+  		"id": integer,
+  		"name": string,
+  		"email": string,
+  		"slug": string,
+  		"bio": string | null,
+  		"profile_picture": string,
+  		"type_user_id": integer,
+  		"profile_public": integer,
+  		"type_user": {
+  			"id": integer,
+  			"name": string,
+  			"description": string,
+  			"private": boolean
+  		}
+  	}
+  }
+
+  ```
 method: GET
 body: {}
 parameters: []

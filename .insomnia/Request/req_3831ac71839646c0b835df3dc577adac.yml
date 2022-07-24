@@ -1,13 +1,13 @@
-_id: req_e96f7872ca5c4139aea93d5313e251e8
+_id: req_3831ac71839646c0b835df3dc577adac
 type: Request
-parentId: fld_ac09e005ffce412e940e9b12abf55671
-modified: 1658694997568
-created: 1656260859109
-url: "{{ _.local }}/users"
-name: /users
+parentId: fld_9ca41e47151d4e098483ee983897db18
+modified: 1658695041739
+created: 1658694933650
+url: "{{ _.local }}/deleted/users"
+name: /deleted/users
 description: |
   ## Objective
-  This route will bring all users who are active on the
+  This route will bring all users who are desactive on the database
 
   ## Request
   None
@@ -39,7 +39,7 @@ body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1656260859109
+metaSortKey: -1658694933650
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

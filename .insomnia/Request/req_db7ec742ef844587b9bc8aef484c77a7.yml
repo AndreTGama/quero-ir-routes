@@ -1,0 +1,38 @@
+_id: req_db7ec742ef844587b9bc8aef484c77a7
+type: Request
+parentId: fld_9ca41e47151d4e098483ee983897db18
+modified: 1658696760820
+created: 1658695096691
+url: "{{ _.local }}/deleted/users/11"
+name: /deleted/users/{id}
+description: |
+  ## Objective
+  Restore user was deleted 
+
+  ## Request
+  - id: integer **(route param)**
+
+  ## Response
+
+  ```
+  {
+  	"error": boolean,
+  	"message": string,
+  	"developerMessage": any,
+  	"exception": any,
+  	"data": null
+  }
+  ```
+method: PUT
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1657477896379.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
