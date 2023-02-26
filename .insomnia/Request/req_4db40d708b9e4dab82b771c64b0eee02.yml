@@ -1,0 +1,21 @@
+_id: req_4db40d708b9e4dab82b771c64b0eee02
+type: Request
+parentId: fld_0f39116a991c45118851483f82e06304
+modified: 1677437782642
+created: 1671215268781
+url: "{{ _.local }}/account/63fbab1413f0d"
+name: account
+description: ""
+method: PUT
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1671215268781
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

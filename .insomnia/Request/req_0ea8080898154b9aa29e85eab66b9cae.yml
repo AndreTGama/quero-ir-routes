@@ -1,10 +1,10 @@
-_id: req_9c98019c2bcd47ffbd219516aab123e3
+_id: req_0ea8080898154b9aa29e85eab66b9cae
 type: Request
-parentId: fld_ac09e005ffce412e940e9b12abf55671
-modified: 1671122259302
-created: 1656254609105
-url: "{{ _.local }}/users"
-name: /users
+parentId: fld_0f39116a991c45118851483f82e06304
+modified: 1672079647331
+created: 1671214647904
+url: "{{ _.local }}/account/"
+name: account
 description: |
   ## Objective
   This route will create a user in database
@@ -41,20 +41,15 @@ body:
   text: |-
     {
     	"name": "Andre Gama",
-    	"email": "asdf@email.com.br",
+    	"email": "andre_gama789@hotmail.com",
     	"password": "123@Mudar"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_f1a6efe6d9ce4467a8d940405574228b
-  - id: pair_40f64771058e49d482ccb2d7ad772f0b
-    name: Accept
-    value: application/json
-    description: ""
 authentication: {}
-metaSortKey: -1656254609105
+metaSortKey: -1671214647904
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

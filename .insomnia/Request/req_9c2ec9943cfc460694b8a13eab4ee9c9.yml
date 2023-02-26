@@ -1,0 +1,30 @@
+_id: req_9c2ec9943cfc460694b8a13eab4ee9c9
+type: Request
+parentId: fld_0f39116a991c45118851483f82e06304
+modified: 1677436590133
+created: 1677258501502
+url: "{{ _.local }}/account/resend-code"
+name: resend-code
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "andre_gama@email.com.br"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_951e7b361b3a43dca40941c822bfad27
+    disabled: false
+authentication: {}
+metaSortKey: -1677258501502
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

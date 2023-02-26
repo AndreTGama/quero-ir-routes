@@ -1,9 +1,9 @@
 _id: req_25c77112d3804b4781b0a68503dcf7e3
 type: Request
 parentId: fld_ac09e005ffce412e940e9b12abf55671
-modified: 1658691632722
+modified: 1667066215632
 created: 1656258702281
-url: "{{ _.local }}/users/1"
+url: "{{ _.local }}/users/10000"
 name: /users/{id}
 description: >
   ## Objective
@@ -55,7 +55,15 @@ description: >
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_7dd75e802dbd4d678a36539d59ba80e7
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_a1a9827e719f41b3a803bf3a6c4e9554
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1656254609155
 isPrivate: false

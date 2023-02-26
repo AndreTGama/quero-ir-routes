@@ -1,10 +1,10 @@
-_id: req_e96f7872ca5c4139aea93d5313e251e8
+_id: req_c071865af67e4ed7bd32f076c56fe31f
 type: Request
-parentId: fld_ac09e005ffce412e940e9b12abf55671
-modified: 1667075134852
-created: 1656260859109
-url: "{{ _.local }}/users"
-name: /users
+parentId: fld_174c5a7e77c14f74b235585fa02d7a6e
+modified: 1671482983974
+created: 1667075658368
+url: "{{ _.local }}/users/my-profile"
+name: /users/my-profile
 description: |
   ## Objective
   This route will bring all users who are active on the
@@ -35,13 +35,17 @@ description: |
   }
   ```
 method: GET
-body: {}
+body:
+  mimeType: application/json
+  text: ""
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
 authentication:
   type: bearer
-  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY2NzA3MzcwMCwiZXhwIjoxNjY3MDc3MzAwLCJuYmYiOjE2NjcwNzM3MDAsImp0aSI6Img3SnJBMkN1WlFFS3BPRzciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.5wSXLAN4rPGXiMHLlDl7lsLkiiyNf7w3XlaJZISpd2o
-metaSortKey: -1656260859109
+  token: "{{ _.token }}"
+metaSortKey: -1671211560500
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,0 +1,30 @@
+_id: req_1e48d7c1212842859e5d39ceb04e3c77
+type: Request
+parentId: fld_13d45a3d28414d69b381424abbcae7b1
+modified: 1677437798352
+created: 1667065224072
+url: "{{ _.local }}/login"
+name: Login
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "andre_gama789@hotmail.com",
+    	"password": "123@Mudar"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2157e8ae262e4c59b1d1064c4154e3ec
+authentication: {}
+metaSortKey: -1667065224072
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
